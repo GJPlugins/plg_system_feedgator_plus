@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.8" group="system" method="upgrade">
+	<name>PLG_SYSTEM_PLG_SYSTEM_FEEDGATOR_PLUS</name>
+	<creationDate>09.01.2021</creationDate>
+	<author>oleg</author>
+	<authorEmail>your@email.com</authorEmail>
+	<authorUrl>http://your.url.com</authorUrl>
+	<copyright>A copyright</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>1.0</version>
+	<description>PLG_SYSTEM_PLG_SYSTEM_FEEDGATOR_PLUS_XML_DESCRIPTION</description>
+
+	<!-- Scripts to run on installation -->
+	<scriptfile></scriptfile>
+
+	<!-- Language files -->
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_plg_system_feedgator_plus.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_plg_system_feedgator_plus.sys.ini</language>
+	</languages>
+
+	<!-- Plugin files -->
+	<files>
+		<filename plugin="plg_system_feedgator_plus">plg_system_feedgator_plus.php</filename>
+		<folder>language</folder>
+	</files>
+
+	<!-- Config parameter -->
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="sample"
+					type="text"
+					default="42"
+					label="PLG_SYSTEM_PLG_SYSTEM_FEEDGATOR_PLUS_SAMPLE_LABEL"
+					description="PLG_SYSTEM_PLG_SYSTEM_FEEDGATOR_PLUS_SAMPLE_DESCRIPTION"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+
+	<!-- Update servers -->
+	<updateservers>
+		<server type="extension" priority="1" name="plg_system_feedgator_plus">https://www.example.com/plg_plg_system_feedgator_plus.xml</server>
+	</updateservers>
+</extension>
