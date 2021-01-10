@@ -2,7 +2,7 @@
 <extension type="plugin" version="3.8" group="system" method="upgrade">
 	<name>PLG_SYSTEM_PLG_SYSTEM_FEEDGATOR_PLUS</name>
 	<creationDate>09.01.2021</creationDate>
-	<author>oleg</author>
+	<author>Gartes</author>
 	<authorEmail>your@email.com</authorEmail>
 	<authorUrl>http://your.url.com</authorUrl>
 	<copyright>A copyright</copyright>
@@ -21,21 +21,18 @@
 
 	<!-- Plugin files -->
 	<files>
-		<filename plugin="plg_system_feedgator_plus">plg_system_feedgator_plus.php</filename>
+		<folder>helpers</folder>
 		<folder>language</folder>
+		<filename>LICENSE</filename>
+		<filename plugin="plg_system_feedgator_plus">plg_system_feedgator_plus.php</filename>
+		<filename>README.md</filename>
 	</files>
 
 	<!-- Config parameter -->
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
-				<field
-					name="sample"
-					type="text"
-					default="42"
-					label="PLG_SYSTEM_PLG_SYSTEM_FEEDGATOR_PLUS_SAMPLE_LABEL"
-					description="PLG_SYSTEM_PLG_SYSTEM_FEEDGATOR_PLUS_SAMPLE_DESCRIPTION"
-				/>
+
 			</fieldset>
 		</fields>
 	</config>
